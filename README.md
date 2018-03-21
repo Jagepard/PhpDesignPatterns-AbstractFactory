@@ -4,5 +4,8 @@
 
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/a117b0ab-4147-43ab-b98d-c5c957a2eee3/big.png)](https://insight.sensiolabs.com/projects/a117b0ab-4147-43ab-b98d-c5c957a2eee3)
 
+![AbstractFactory](https://github.com/Jagepard/PhpDesignPatterns-AbstractFactory/blob/master/AbstractFactory.png?raw=true "AbstractFactory")
+
+
 # AbstractFactory
 Абстрактная фабрика
