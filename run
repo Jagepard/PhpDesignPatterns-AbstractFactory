@@ -1,0 +1,14 @@
+#! usr/bin/env php
+<?php
+
+namespace Creational\AbstractFactory;
+
+require_once 'vendor/autoload.php';
+
+$germanFactory = new GermanFactory();
+
+$germanAuto = $germanFactory->createAuto(160, 120, 'black');
+var_dump($germanAuto->getAuto());
+
+$germanBike = $germanFactory->createBike(210, 120);
+var_dump($germanBike->getBike());
