@@ -7,3 +7,5 @@
 
 # AbstractFactory | [API](https://github.com/Jagepard/PhpDesignPatterns-AbstractFactory/blob/master/docs.md "Documentation API")
 Абстрактная фабрика
+
+![AbstractFactory](https://github.com/Jagepard/PhpDesignPatterns-AbstractFactory/blob/master/UML.png)
