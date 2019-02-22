@@ -9,7 +9,6 @@ declare(strict_types=1);
 
 namespace Creational\AbstractFactory\Tests;
 
-use Creational\AbstractFactory\Handler;
 use Creational\AbstractFactory\XMLFactory;
 use Creational\AbstractFactory\JsonFactory;
 use PHPUnit\Framework\TestCase as PHPUnit_Framework_TestCase;
@@ -20,34 +19,40 @@ use PHPUnit\Framework\TestCase as PHPUnit_Framework_TestCase;
  */
 class AbstractFactoryTest extends PHPUnit_Framework_TestCase
 {
-
-    /**
-     * @var Handler
-     */
-    protected $handler;
     /**
      * @var string
      */
-    protected $content;
+    private $content;
 
     protected function setUp(): void
     {
-        $this->handler = new Handler();
         $this->content = 'Message';
     }
 
     public function testJson()
     {
-        $content = json_encode($this->content);
-        $this->assertEquals($this->handler->getMessage(new JsonFactory(), $this->content), $content);
+        $content     = \json_encode($this->content);
+        $jsonFactory = new JsonFactory();
+
+        $this->assertEquals($jsonFactory->createMessage($this->getContent())->getContent(), $content);
     }
 
     public function testXML()
     {
         $dom     = new \DOMDocument("1.0", "utf-8");
-        $content = $dom->createElement("content", $this->content);
+        $content = $dom->createElement("content", $this->getContent());
         $dom->appendChild($content);
+        $xmlFactory = new XMLFactory();
 
-        $this->assertEquals($this->handler->getMessage(new XMLFactory(), $this->content), $dom->saveXML());
+
+        $this->assertEquals($xmlFactory->createMessage($this->getContent())->getContent(), $dom->saveXML());
+    }
+
+    /**
+     * @return string
+     */
+    public function getContent(): string
+    {
+        return $this->content;
     }
 }
