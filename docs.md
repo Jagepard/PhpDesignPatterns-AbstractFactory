@@ -3,7 +3,6 @@
 - [\Creational\AbstractFactory\AbstractFactory (abstract)](#class-creationalabstractfactoryabstractfactory-abstract)
 - [\Creational\AbstractFactory\JsonFactory](#class-creationalabstractfactoryjsonfactory)
 - [\Creational\AbstractFactory\XMLFactory](#class-creationalabstractfactoryxmlfactory)
-- [\Creational\AbstractFactory\Handler](#class-creationalabstractfactoryhandler)
 - [\Creational\AbstractFactory\JsonMessage](#class-creationalabstractfactoryjsonmessage)
 - [\Creational\AbstractFactory\AbstractMessage (abstract)](#class-creationalabstractfactoryabstractmessage-abstract)
 - [\Creational\AbstractFactory\XMLMessage](#class-creationalabstractfactoryxmlmessage)
@@ -41,16 +40,6 @@
 | public | <strong>createMessage(</strong><em>\string</em> <strong>$content</strong>)</strong> : <em>[\Creational\AbstractFactory\AbstractMessage](#class-creationalabstractfactoryabstractmessage-abstract)</em> |
 
 *This class extends [\Creational\AbstractFactory\AbstractFactory](#class-creationalabstractfactoryabstractfactory-abstract)*
-
-<hr />
-
-### Class: \Creational\AbstractFactory\Handler
-
-> Class Handler
-
-| Visibility | Function |
-|:-----------|:---------|
-| public | <strong>getMessage(</strong><em>[\Creational\AbstractFactory\AbstractFactory](#class-creationalabstractfactoryabstractfactory-abstract)</em> <strong>$factory</strong>, <em>\string</em> <strong>$content</strong>)</strong> : <em>string</em> |
 
 <hr />
 

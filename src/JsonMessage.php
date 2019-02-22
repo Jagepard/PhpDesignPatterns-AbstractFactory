@@ -15,12 +15,11 @@ namespace Creational\AbstractFactory;
  */
 class JsonMessage extends AbstractMessage
 {
-
     /**
      * @return string
      */
     public function getContent(): string
     {
-        return json_encode($this->content);
+        return \json_encode($this->content);
     }
 }

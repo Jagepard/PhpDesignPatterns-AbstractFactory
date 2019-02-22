@@ -15,7 +15,6 @@ namespace Creational\AbstractFactory;
  */
 class XMLMessage extends AbstractMessage
 {
-
     /**
      * @return string
      */

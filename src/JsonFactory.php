@@ -15,7 +15,6 @@ namespace Creational\AbstractFactory;
  */
 class JsonFactory extends AbstractFactory
 {
-
     /**
      * @param string $content
      * @return AbstractMessage
