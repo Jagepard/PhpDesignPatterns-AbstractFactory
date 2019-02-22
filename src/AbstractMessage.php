@@ -15,7 +15,6 @@ namespace Creational\AbstractFactory;
  */
 abstract class AbstractMessage
 {
-
     /**
      * @var string
      */

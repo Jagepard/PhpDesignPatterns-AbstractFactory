@@ -15,7 +15,6 @@ namespace Creational\AbstractFactory;
  */
 abstract class AbstractFactory
 {
-
     /**
      * @param string $content
      * @return AbstractMessage
