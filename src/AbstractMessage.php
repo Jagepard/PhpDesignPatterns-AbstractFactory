@@ -18,7 +18,7 @@ abstract class AbstractMessage
     /**
      * @var string
      */
-    private $content;
+    protected $content;
 
     /**
      * AbstractMessage constructor.
