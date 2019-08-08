@@ -9,10 +9,6 @@ declare(strict_types=1);
 
 namespace Creational\AbstractFactory;
 
-/**
- * Class XMLMessage
- * @package Creational\AbstractFactory
- */
 class XMLMessage extends AbstractMessage
 {
     /**

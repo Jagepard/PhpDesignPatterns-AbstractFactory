@@ -9,10 +9,6 @@ declare(strict_types=1);
 
 namespace Creational\AbstractFactory;
 
-/**
- * Class AbstractMessage
- * @package Creational\AbstractFactory
- */
 abstract class AbstractMessage
 {
     /**
