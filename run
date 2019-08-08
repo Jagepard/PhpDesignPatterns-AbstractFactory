@@ -9,5 +9,5 @@ $content     = 'Message';
 $xmlFactory  = new XMLFactory();
 $jsonFactory = new JsonFactory();
 
-$xmlFactory->createMessage($content)->getContent();
-$jsonFactory->createMessage($content)->getContent();
+echo $xmlFactory->createMessage($content)->getContent() . "\n";
+echo $jsonFactory->createMessage($content)->getContent() . "\n";
