@@ -6,6 +6,8 @@
 -----
 
 # AbstractFactory | [API](https://github.com/Jagepard/PhpDesignPatterns-AbstractFactory/blob/master/docs.md "Documentation API")
+```php run``` Запустить исполнение шаблона в терминале
+
 Абстрактная фабрика
 
 ![AbstractFactory](https://github.com/Jagepard/PhpDesignPatterns-AbstractFactory/blob/master/UML.png)
