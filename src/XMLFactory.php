@@ -9,10 +9,6 @@ declare(strict_types=1);
 
 namespace Creational\AbstractFactory;
 
-/**
- * Class GermanFactory
- * @package Creational\AbstractFactory
- */
 class XMLFactory extends AbstractFactory
 {
     /**

@@ -13,10 +13,6 @@ use Creational\AbstractFactory\XMLFactory;
 use Creational\AbstractFactory\JsonFactory;
 use PHPUnit\Framework\TestCase as PHPUnit_Framework_TestCase;
 
-/**
- * Class AbstractFactoryTest
- * @package Creational\AbstractFactory\Tests
- */
 class AbstractFactoryTest extends PHPUnit_Framework_TestCase
 {
     /**

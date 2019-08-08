@@ -9,10 +9,6 @@ declare(strict_types=1);
 
 namespace Creational\AbstractFactory;
 
-/**
- * Class JsonFactory
- * @package Creational\AbstractFactory
- */
 class JsonFactory extends AbstractFactory
 {
     /**
