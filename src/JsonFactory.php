@@ -13,10 +13,10 @@ class JsonFactory extends AbstractFactory
 {
     /**
      * @param  string  $content
-     * @return string
+     * @return AbstractMessage
      */
-    public function createMessage(string $content): string
+    public function createMessage(string $content): AbstractMessage
     {
-        return \json_encode(['content' => $content]);
+        return new JsonMessage($content);
     }
 }

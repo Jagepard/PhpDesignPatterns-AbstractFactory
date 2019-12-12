@@ -13,13 +13,10 @@ class XMLFactory extends AbstractFactory
 {
     /**
      * @param  string  $content
-     * @return string
+     * @return AbstractMessage
      */
-    public function createMessage(string $content): string
+    public function createMessage(string $content): AbstractMessage
     {
-        $dom = new \DOMDocument("1.0", "utf-8");
-        $dom->appendChild($dom->createElement("content", $content));
-
-        return $dom->saveXML();
+        return new XMLMessage($content);
     }
 }
