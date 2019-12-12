@@ -24,7 +24,7 @@ class AbstractFactoryTest extends PHPUnit_Framework_TestCase
     {
         $content = \json_encode(['content' => $this->content]);
 
-        $this->assertEquals((new JsonFactory())->createMessage($this->content), $content);
+        $this->assertEquals((new JsonFactory())->createMessage($this->content)->getContent(), $content);
     }
 
     public function testXML()
@@ -34,6 +34,6 @@ class AbstractFactoryTest extends PHPUnit_Framework_TestCase
         $dom->appendChild($content);
         $xmlFactory = new XMLFactory();
 
-        $this->assertEquals($xmlFactory->createMessage($this->content), $dom->saveXML());
+        $this->assertEquals($xmlFactory->createMessage($this->content)->getContent(), $dom->saveXML());
     }
 }
