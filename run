@@ -5,9 +5,7 @@ namespace Creational\AbstractFactory;
 
 require_once 'vendor/autoload.php';
 
-$content     = 'Message';
-$xmlFactory  = new XMLFactory();
-$jsonFactory = new JsonFactory();
+$content = 'Message';
 
-echo $xmlFactory->createMessage($content)->getContent() . "\n";
-echo $jsonFactory->createMessage($content)->getContent() . "\n";
+echo (new XMLFactory())->createMessage($content)."\n";
+echo (new JsonFactory())->createMessage($content)."\n";
