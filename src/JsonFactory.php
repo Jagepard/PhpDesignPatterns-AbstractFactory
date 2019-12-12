@@ -3,8 +3,8 @@
 declare(strict_types=1);
 
 /**
- * @author    : Korotkov Danila <dankorot@gmail.com>
- * @license   https://mit-license.org/ MIT
+ * @author  : Jagepard <jagepard@yandex.ru>
+ * @license https://mit-license.org/ MIT
  */
 
 namespace Creational\AbstractFactory;
@@ -12,11 +12,11 @@ namespace Creational\AbstractFactory;
 class JsonFactory extends AbstractFactory
 {
     /**
-     * @param string $content
-     * @return AbstractMessage
+     * @param  string  $content
+     * @return string
      */
-    public function createMessage(string $content): AbstractMessage
+    public function createMessage(string $content): string
     {
-        return new JsonMessage($content);
+        return \json_encode(['content' => $content]);
     }
 }
