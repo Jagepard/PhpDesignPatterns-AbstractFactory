@@ -11,22 +11,12 @@ namespace Creational\AbstractFactory;
 
 abstract class AbstractMessage
 {
-    /**
-     * @var string
-     */
-    protected $content;
+    protected string $content;
 
-    /**
-     * AbstractMessage constructor.
-     * @param string $content
-     */
     public function __construct(string $content)
     {
         $this->content = $content;
     }
 
-    /**
-     * @return string
-     */
     abstract public function getContent(): string;
 }

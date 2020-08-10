@@ -11,10 +11,6 @@ namespace Creational\AbstractFactory;
 
 class XMLFactory extends AbstractFactory
 {
-    /**
-     * @param  string  $content
-     * @return AbstractMessage
-     */
     public function createMessage(string $content): AbstractMessage
     {
         return new XMLMessage($content);
