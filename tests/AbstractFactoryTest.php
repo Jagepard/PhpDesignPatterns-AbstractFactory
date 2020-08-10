@@ -9,16 +9,12 @@ declare(strict_types=1);
 
 namespace Creational\AbstractFactory\Tests;
 
-use Creational\AbstractFactory\XMLFactory;
-use Creational\AbstractFactory\JsonFactory;
+use Creational\{AbstractFactory\XMLFactory, AbstractFactory\JsonFactory};
 use PHPUnit\Framework\TestCase as PHPUnit_Framework_TestCase;
 
 class AbstractFactoryTest extends PHPUnit_Framework_TestCase
 {
-    /**
-     * @var string
-     */
-    private $content = 'Message';
+    private string $content = "Message";
 
     public function testJson()
     {
