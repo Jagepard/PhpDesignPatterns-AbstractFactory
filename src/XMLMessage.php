@@ -11,9 +11,6 @@ namespace Creational\AbstractFactory;
 
 class XMLMessage extends AbstractMessage
 {
-    /**
-     * @return string
-     */
     public function getContent(): string
     {
         $dom     = new \DOMDocument("1.0", "utf-8");

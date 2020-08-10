@@ -11,10 +11,6 @@ namespace Creational\AbstractFactory;
 
 class JsonFactory extends AbstractFactory
 {
-    /**
-     * @param  string  $content
-     * @return AbstractMessage
-     */
     public function createMessage(string $content): AbstractMessage
     {
         return new JsonMessage($content);
