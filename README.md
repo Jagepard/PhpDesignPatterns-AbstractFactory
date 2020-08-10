@@ -7,5 +7,3 @@
 
 # AbstractFactory | [API](https://github.com/Jagepard/PhpDesignPatterns-AbstractFactory/blob/master/docs.md "Documentation API")
 ```php run``` execute in terminal
-
-![AbstractFactory](https://github.com/Jagepard/PhpDesignPatterns-AbstractFactory/blob/master/UML.png)
