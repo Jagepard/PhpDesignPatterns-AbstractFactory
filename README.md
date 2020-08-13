@@ -7,3 +7,11 @@
 
 # AbstractFactory | [API](https://github.com/Jagepard/PhpDesignPatterns-AbstractFactory/blob/master/docs.md "Documentation API")
 ```php run``` execute in terminal
+
+## Result:
+```
+<?xml version="1.0" encoding="utf-8"?>
+<content>Message</content>
+
+{"content":"Message"}
+```
