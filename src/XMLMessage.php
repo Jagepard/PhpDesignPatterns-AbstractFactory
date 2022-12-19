@@ -9,12 +9,12 @@ declare(strict_types=1);
 
 namespace Creational\AbstractFactory;
 
-class XMLMessage extends AbstractMessage
+class XMLMessage extends MessageFactory
 {
-    public function getContent(): string
+    public function createMessage(string $content): string
     {
         $dom     = new \DOMDocument("1.0", "utf-8");
-        $content = $dom->createElement("content", $this->content);
+        $content = $dom->createElement("content", $content);
         $dom->appendChild($content);
 
         return $dom->saveXML();

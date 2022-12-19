@@ -9,10 +9,10 @@ declare(strict_types=1);
 
 namespace Creational\AbstractFactory;
 
-class JsonMessage extends AbstractMessage
+class JsonMessage extends MessageFactory
 {
-    public function getContent(): string
+    public function createMessage(string $content): string
     {
-        return \json_encode(["content" => $this->content]);
+        return \json_encode(["content" => $content]);
     }
 }
