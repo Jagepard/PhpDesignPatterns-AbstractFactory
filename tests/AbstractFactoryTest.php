@@ -9,7 +9,8 @@ declare(strict_types=1);
 
 namespace Creational\AbstractFactory\Tests;
 
-use Creational\{AbstractFactory\XMLFactory, AbstractFactory\JsonFactory};
+use Creational\AbstractFactory\JsonMessage;
+use Creational\AbstractFactory\XMLMessage;
 use PHPUnit\Framework\TestCase as PHPUnit_Framework_TestCase;
 
 class AbstractFactoryTest extends PHPUnit_Framework_TestCase
@@ -20,7 +21,7 @@ class AbstractFactoryTest extends PHPUnit_Framework_TestCase
     {
         $content = \json_encode(['content' => $this->content]);
 
-        $this->assertEquals((new JsonFactory())->createMessage($this->content)->getContent(), $content);
+        $this->assertEquals((new JsonMessage())->createMessage($this->content), $content);
     }
 
     public function testXML()
@@ -28,8 +29,8 @@ class AbstractFactoryTest extends PHPUnit_Framework_TestCase
         $dom = new \DOMDocument("1.0", "utf-8");
         $content = $dom->createElement("content", $this->content);
         $dom->appendChild($content);
-        $xmlFactory = new XMLFactory();
+        $xmlFactory = new XMLMessage();
 
-        $this->assertEquals($xmlFactory->createMessage($this->content)->getContent(), $dom->saveXML());
+        $this->assertEquals($xmlFactory->createMessage($this->content), $dom->saveXML());
     }
 }

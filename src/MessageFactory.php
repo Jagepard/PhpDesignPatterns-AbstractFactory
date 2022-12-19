@@ -9,7 +9,7 @@ declare(strict_types=1);
 
 namespace Creational\AbstractFactory;
 
-abstract class AbstractFactory
+abstract class MessageFactory
 {
-    abstract public function createMessage(string $content): AbstractMessage;
+    abstract public function createMessage(string $content): string;
 }
