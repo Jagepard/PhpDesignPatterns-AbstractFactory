@@ -11,6 +11,14 @@ namespace Creational\AbstractFactory;
 
 class XMLMessage extends MessageFactory
 {
+    /**
+     * Creates a message
+     * -----------------
+     * Создает сообщение
+     *
+     * @param  string $content
+     * @return string
+     */
     public function createMessage(string $content): string
     {
         $dom     = new \DOMDocument("1.0", "utf-8");

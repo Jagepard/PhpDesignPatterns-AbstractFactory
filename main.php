@@ -6,5 +6,8 @@ require_once "vendor/autoload.php";
 
 $content = "Message";
 
-echo (new XMLFactory())->createMessage($content)->getContent() . "\n";
-echo (new JsonFactory())->createMessage($content)->getContent() . "\n";
+$factory = new XMLMessage();
+echo $factory->createMessage($content). "\n";
+
+$factory = new JsonMessage();
+echo $factory->createMessage($content) . "\n";
